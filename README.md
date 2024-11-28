@@ -7,6 +7,11 @@ $ pipenv install
 # Start FastAPI
 
 ```
-pipenv run fastapi dev app/main.py or pipenv shell
+pipenv run fastapi dev app/main.py 
 
 ```
+or
+```
+pipenv shell
+```
+
