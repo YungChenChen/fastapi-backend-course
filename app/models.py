@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Boolean, Date
-from .main import Base
+from .database import Base
 
 # Define Model
 class Todo(Base):
@@ -9,6 +9,7 @@ class Todo(Base):
     description = Column(String, nullable=True)
     completed = Column(Boolean, default=False)
     due_date = Column(Date, nullable=True)
+    priority = Column(Integer, default=0)
 
 # Define User Model
 class User(Base):
