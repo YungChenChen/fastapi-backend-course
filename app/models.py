@@ -18,3 +18,4 @@ class User(Base):
     username = Column(String(20), nullable=False, unique=True)
     password = Column(String(128), nullable=False)
     email = Column(String(100), nullable=False)
+    status = Column(Boolean, default=True)
